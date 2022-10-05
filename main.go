@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"strconv"
+	"time"
 )
 
 func main() {
@@ -14,6 +15,7 @@ func main() {
 
 	}
 
+	time.Sleep(time.Second * 10)
 	fmt.Println("Complete")
 
 	return
