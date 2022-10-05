@@ -9,14 +9,14 @@ import (
 
 func main() {
 
-	for j := 0; j < 5; j++ {
+	for j := 0; j < 10; j++ {
 
 		go httpClient()
 
 	}
 
 	time.Sleep(time.Second * 10)
-	fmt.Println("Complete")
+	//fmt.Println("Complete")
 
 	return
 
@@ -25,7 +25,7 @@ func main() {
 func httpClient() {
 	url := "https://tls-test.eda-test.verification-gcp.colopl.jp/"
 
-	for i := 0; i < 2; i++ {
+	for i := 0; i < 1; i++ {
 
 		req, _ := http.NewRequest("GET", url, nil)
 
@@ -47,5 +47,5 @@ func httpClient() {
 		fmt.Println(strconv.Itoa(i))
 	}
 
-	fmt.Println("gorutine complete")
+	//fmt.Println("gorutine complete")
 }
