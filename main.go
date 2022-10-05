@@ -9,7 +9,7 @@ import (
 
 func main() {
 
-	for j := 0; j < 10; j++ {
+	for j := 0; j < 100; j++ {
 
 		go httpClient()
 
