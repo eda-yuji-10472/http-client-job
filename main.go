@@ -32,7 +32,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func httpClient() {
 	url := "https://tls-test.eda-test.verification-gcp.colopl.jp/"
 
-	for i := 0; i < 1; i++ {
+	for i := 0; i < 2; i++ {
 
 		req, _ := http.NewRequest("GET", url, nil)
 
