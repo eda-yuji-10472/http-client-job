@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"os"
 	"strconv"
 )
 
@@ -19,14 +18,6 @@ func main() {
 
 	return
 
-}
-
-func handler(w http.ResponseWriter, r *http.Request) {
-	name := os.Getenv("NAME")
-	if name == "" {
-		name = "World"
-	}
-	fmt.Fprintf(w, "Hello %s!\n", name)
 }
 
 func httpClient() {
@@ -53,4 +44,6 @@ func httpClient() {
 		//fmt.Println(string(byteArray))
 		fmt.Println(strconv.Itoa(i))
 	}
+
+	fmt.Println("gorutine complete")
 }
