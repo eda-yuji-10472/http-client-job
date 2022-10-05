@@ -15,6 +15,10 @@ func main() {
 
 	}
 
+	fmt.Println("Complete")
+
+	return
+
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
